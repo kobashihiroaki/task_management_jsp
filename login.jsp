@@ -14,14 +14,15 @@
         <div class="form-main">
             <h1>タスク管理アプリ</h1>
             <p>ユーザーIDとパスワードを入力してください。</p>
-            <form class="form" method="post" action="login">
-                <input type="text" name="login-id" placeholder="ユーザーID" maxlength="30">
-                <input type="password" name="login-password" placeholder="パスワード" maxlength="30">
-                <button class="button" type="submit">ログイン</button>
+            <form class="form" method="post">
+                <input type="text" id="login-id" name="login-id" placeholder="ユーザーID" maxlength="30">
+                <input type="password" id="login-password" name="login-password" placeholder="パスワード" maxlength="30">
+                <button id="login-button" class="button" type="button">ログイン</button>
             </form>
             <p class="question">アカウントをお持ちではありませんか？</p>
             <a href="./sign-up.html">アカウントを作成</a>
         </div>
     </div>
+    <script type="text/javascript" src="./js/login.js" ></script>
 </body>
 </html>
