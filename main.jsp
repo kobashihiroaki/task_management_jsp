@@ -29,7 +29,7 @@
            <h1>タスク管理アプリ</h1>
            <div class="user">
                <p>ようこそ○○さん</p>
-               <button class="logout" onclick="location.href='./login.jsp'">ログアウト</button>
+               <button id="logout" class="logout">ログアウト</button>
            </div>
        </div>
        <div onclick="open_form();" id="task-input" class="task-input">
@@ -65,5 +65,6 @@
      </div>
 
     <script type="text/javascript" src="./js/main.js" ></script>
+    <script type="text/javascript" src="./js/main_data.js" ></script>
 </body>
 </html>

@@ -1,3 +1,10 @@
+//画面読み込み時
+document.addEventListener('DOMContentLoaded', function () {
+	if (sessionStorage.getItem('user_data') != null) {
+		location.href = "./main.jsp";
+	}
+});
+
 document.getElementById("login-button").addEventListener("click", function() {
 	let user_data = {};
 	user_data = {
@@ -20,7 +27,12 @@ document.getElementById("login-button").addEventListener("click", function() {
     })
     .then (json => {
     	console.log(json);
-//    	location.href = "main";
+    	if (json["login_id"] != null) {
+    		sessionStorage.setItem('user_data', JSON.stringify(json));
+    		location.href = "./main.jsp";
+    	} else {
+    		location.href = "./login.jsp";
+    	}
     })
     .catch(e => {
         alert("エラー");
