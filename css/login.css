@@ -10,7 +10,7 @@ body {
     height: 700px;
 }
 
-.button {  
+.button {
     margin-bottom: 30px;
     background-color: #00a82d;
     height: 50px;
@@ -57,6 +57,10 @@ body {
     height: 50px;
     border-radius: 7px;
     border: 1px solid #e6e6e6;
+}
+
+.form input:focus {
+	outline: 0;
 }
 
 .form-main a {

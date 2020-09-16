@@ -20,7 +20,7 @@
                 <button id="login-button" class="button" type="button">ログイン</button>
             </form>
             <p class="question">アカウントをお持ちではありませんか？</p>
-            <a href="./sign-up.html">アカウントを作成</a>
+            <a href="./sign-up.jsp">アカウントを作成</a>
         </div>
     </div>
     <script type="text/javascript" src="./js/login.js" ></script>

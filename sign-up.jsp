@@ -16,15 +16,15 @@
             <p>任意のユーザーIDとパスワードを入力してください。</p>
             <p>確認用のパスワードは同じものを入力してください。</p>
             <form class="form" method="post" action="">
-                <input type="text" placeholder="ユーザーID （半角英数字8文字以上）" maxlength="30">
-                <input type="password" placeholder="パスワード （半角英数字8文字以上）" maxlength="30">
-                <input type="password" placeholder="パスワード （確認用）" maxlength="30">
-                <button class="button" type="submit">会員登録</button>
+                <input type="text" id="login-id" placeholder="ユーザーID （半角英数字8文字以上）" maxlength="30">
+                <input type="password" id="login-password" placeholder="パスワード （半角英数字8文字以上）" maxlength="30">
+                <input type="password" id="same-login-password" placeholder="パスワード （確認用）" maxlength="30">
+                <button id="sign-up-button" class="button" type="button">会員登録</button>
             </form>
             <p class="question">既にアカウントをお持ちですか？</p>
-            <a href="./login.html">ログイン</a>
+            <a href="./login.jsp">ログイン</a>
         </div>
     </div>
-    <script type="text/javascript" src="" ></script>
+    <script type="text/javascript" src="./js/sign-up.js" ></script>
 </body>
 </html>
