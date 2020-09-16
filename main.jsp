@@ -28,7 +28,7 @@
        <div class="menu">
            <h1>タスク管理アプリ</h1>
            <div class="user">
-               <p>ようこそ○○さん</p>
+               <p id="user-name" class="user-name"></p>
                <button id="logout" class="logout">ログアウト</button>
            </div>
        </div>
@@ -36,8 +36,8 @@
            メモを入力...
        </div>
        <div id="input-box" class="input-box" contenteditable="true">
-           <textarea class="input-title" placeholder="タイトル" cols="20" rows="10" wrap="soft"></textarea>
-           <textarea class="input-content" placeholder="メモを入力..." cols="20" rows="10" wrap="soft"></textarea>
+           <textarea id="input-title" class="input-title" placeholder="タイトル" cols="20" rows="10" wrap="soft" maxlength=100></textarea>
+           <textarea id="input-content" class="input-content" placeholder="メモを入力..." cols="20" rows="10" wrap="soft" maxlength=100></textarea>
            <div class="input-button" contenteditable="false">
                <button><i class="fas fa-palette"></i></button>
                <button><i class="far fa-image"></i></button>
@@ -63,8 +63,7 @@
            </div>
        </div>
      </div>
-
+	<script type="text/javascript" src="./js/main_data.js" ></script>
     <script type="text/javascript" src="./js/main.js" ></script>
-    <script type="text/javascript" src="./js/main_data.js" ></script>
 </body>
 </html>

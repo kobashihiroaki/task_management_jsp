@@ -26,6 +26,10 @@ body {
     cursor: pointer;
 }
 
+.button:focus {
+	outline: 0;
+}
+
 .form-content {
     background-color: #ffffff;
     position: absolute;
@@ -45,6 +49,10 @@ body {
 
 .form-main {
     width: 80%;
+}
+
+.form-main p {
+	text-align: left;
 }
 
 .form {

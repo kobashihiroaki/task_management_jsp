@@ -31,6 +31,7 @@ document.getElementById("login-button").addEventListener("click", function() {
     		sessionStorage.setItem('user_data', JSON.stringify(json));
     		location.href = "./main.jsp";
     	} else {
+    		alert("ユーザーIDまたはパスワードが不正です。");
     		location.href = "./login.jsp";
     	}
     })

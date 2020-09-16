@@ -17,6 +17,10 @@ button {
     align-items: center;
 }
 
+.user-name {
+	width: 75%;
+}
+
 .task-input {
     display: flex;
     align-items: center;
@@ -101,7 +105,7 @@ button {
     display: flex;
     text-align: right;
     align-items: center;
-    width: 250px;
+    width: 50%;
     justify-content: space-between;
 }
 

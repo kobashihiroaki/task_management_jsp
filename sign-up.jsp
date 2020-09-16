@@ -14,7 +14,6 @@
         <div class="form-main">
             <h1>タスク管理アプリ</h1>
             <p>任意のユーザーIDとパスワードを入力してください。</p>
-            <p>確認用のパスワードは同じものを入力してください。</p>
             <form class="form" method="post" action="">
                 <input type="text" id="login-id" placeholder="ユーザーID （半角英数字8文字以上）" maxlength="30">
                 <input type="password" id="login-password" placeholder="パスワード （半角英数字8文字以上）" maxlength="30">
