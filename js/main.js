@@ -63,7 +63,7 @@ function form_close(e) {
               }
           }
       } else if (form_flag === "edit") {
-	      console.log("ok");
+//	      console.log("ok");
 		  if(!e.target.closest('.task-edit')) {
 		  //外側をクリックしたときの処理
 		    if(!e.target.closest('.task')) {

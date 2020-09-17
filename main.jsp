@@ -11,13 +11,9 @@
 <body>
      <div class="main">
        <div id="gray" class="gray">
-         <div id="task-edit" class="task-edit" contenteditable="true">
-             <div class="task-title">
-                 帰りにやること
-             </div>
-             <div class="task-content">
-                 ガソリンを入れる
-             </div>
+         <div id="task-edit" class="task-edit">
+             <textarea class="task-title">帰りにやること</textarea>
+             <textarea class="task-content">ガソリンを入れる</textarea>
              <div class="task-button" contenteditable="false">
                  <button><i class="fas fa-palette"></i></button>
                  <button><i class="far fa-image"></i></button>
@@ -35,32 +31,16 @@
        <div onclick="open_form();" id="task-input" class="task-input">
            メモを入力...
        </div>
-       <div id="input-box" class="input-box" contenteditable="true">
+       <div id="input-box" class="input-box">
            <textarea id="input-title" class="input-title" placeholder="タイトル" cols="20" rows="10" wrap="soft" maxlength=100></textarea>
-           <textarea id="input-content" class="input-content" placeholder="メモを入力..." cols="20" rows="10" wrap="soft" maxlength=100></textarea>
+           <textarea id="input-content" class="input-content" placeholder="メモを入力..." cols="20" rows="10" wrap="soft" maxlength=300></textarea>
            <div class="input-button" contenteditable="false">
                <button><i class="fas fa-palette"></i></button>
                <button><i class="far fa-image"></i></button>
                <button class="close-form">閉じる</button>
            </div>
        </div>
-       <div class="tasks">
-           <div onclick="edit_task();" class="task" contenteditable="false">
-               <div class="task-title">
-                   買い物
-               </div>
-               <div class="task-content">
-                   ヨーグルト
-               </div>
-           </div>
-           <div onclick="edit_task();" class="task" contenteditable="true">
-               <div class="task-title">
-                   帰りにやること
-               </div>
-               <div class="task-content">
-                   ガソリンを入れる
-               </div>
-           </div>
+       <div id="tasks" class="tasks">
        </div>
      </div>
 	<script type="text/javascript" src="./js/main_data.js" ></script>
