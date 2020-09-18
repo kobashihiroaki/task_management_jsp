@@ -12,8 +12,8 @@
      <div class="main">
        <div id="gray" class="gray">
          <div id="task-edit" class="task-edit">
-             <textarea class="task-title">帰りにやること</textarea>
-             <textarea class="task-content">ガソリンを入れる</textarea>
+             <textarea id="task-title" class="task-title"></textarea>
+             <textarea id="task-content" class="task-content"></textarea>
              <div class="task-button" contenteditable="false">
                  <button><i class="fas fa-palette"></i></button>
                  <button><i class="far fa-image"></i></button>

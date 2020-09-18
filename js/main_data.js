@@ -30,11 +30,11 @@ document.addEventListener('DOMContentLoaded', function () {
 	    })
 	    .then (json => {
 	    	console.log(json);
-	    	//タスクを表示
+	    	sessionStorage.setItem('task_data', JSON.stringify(json));
 	    	let tasks = document.getElementById("tasks");
 	    	//外枠を作る
 	    	for (let i = 0; i < json.length; i++) {
-	    		tasks.insertAdjacentHTML('afterbegin', "<div onclick='edit_task();' name='task' class='task'><textarea name='task-title' class='task-title'></textarea><textarea name='task-content' class='task-content'></textarea></div>");
+	    		tasks.insertAdjacentHTML('beforeend', "<div onclick='edit_task(" + i + ");' name='task' class='task'><textarea name='task-title' class='task-title'></textarea><textarea name='task-content' class='task-content'></textarea></div>");
 	    	}
 
 	    	let task = document.getElementsByName("task");
@@ -42,7 +42,6 @@ document.addEventListener('DOMContentLoaded', function () {
 	    	let task_content = document.getElementsByName("task-content");
 	    	//タスクを入れる
 	    	for (let i = 0; i < json.length; i++) {
-	    		task[i].setAttribute("value", json[i]["id"]);
 		    	task_title[i].value = json[i]["title"];
 		    	task_content[i].value = json[i]["content"];
 	    	}

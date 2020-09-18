@@ -24,12 +24,24 @@ function open_form() {
 
 
 // タスクを押したとき
-function edit_task() {
+function edit_task(value) {
     if(form_flag === "input") {
       return;
     }
     gray.style.display = 'flex';
     form_flag = "edit";
+
+    let task_data = JSON.parse(sessionStorage.getItem('task_data'));
+    //タスクを表示
+    let task = task_data[value];
+    console.log(task);
+
+    let task_title = document.getElementById("task-title");
+    let task_content = document.getElementById("task-content");
+
+    task_title.value = task["title"];
+    task_content.value = task["content"];
+
     document.addEventListener("click", form_close);
 }
 
@@ -42,7 +54,7 @@ function form_close(e) {
                   input_box.style.display = 'none';
                   form_flag = "";
                   remove_event();
-                  task_insert()
+                  task_insert();
               } else {
                   task_input.style.display = 'none';
                   input_box.style.display = 'block';
