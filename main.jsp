@@ -14,10 +14,11 @@
          <div id="task-edit" class="task-edit">
              <textarea id="task-title" class="task-title"></textarea>
              <textarea id="task-content" class="task-content"></textarea>
-             <div class="task-button" contenteditable="false">
+             <div class="task-button">
                  <button><i class="fas fa-palette"></i></button>
                  <button><i class="far fa-image"></i></button>
-                 <button id="close-task" class="close-form">閉じる</button>
+                 <button onclick="close_task();">閉じる</button>
+                 <button onclick="delete_task();">削除</button>
              </div>
          </div>
        </div>
@@ -34,10 +35,10 @@
        <div id="input-box" class="input-box">
            <textarea id="input-title" class="input-title" placeholder="タイトル" cols="20" rows="10" wrap="soft" maxlength=100></textarea>
            <textarea id="input-content" class="input-content" placeholder="メモを入力..." cols="20" rows="10" wrap="soft" maxlength=300></textarea>
-           <div class="input-button" contenteditable="false">
+           <div class="input-button">
                <button><i class="fas fa-palette"></i></button>
                <button><i class="far fa-image"></i></button>
-               <button class="close-form">閉じる</button>
+               <button onclick="close_form()">閉じる</button>
            </div>
        </div>
        <div id="tasks" class="tasks">
