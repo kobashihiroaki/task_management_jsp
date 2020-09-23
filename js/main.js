@@ -48,7 +48,6 @@ function form_close(e) {
       if (form_flag === "input") {
       	  //入力フォームの外側をクリックしたときの処理
           if(!e.target.closest('.input-box')) {
-
               task_input.style.display = 'flex';
               input_box.style.display = 'none';
               form_flag = "";

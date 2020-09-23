@@ -205,7 +205,7 @@ function remove_task(i) {
 		action: "delete",
 		task_id: task_id
 	}
-	console.log(JSON.stringify(task_data));
+
 	const requestUrl = "main";
 
 	fetch(requestUrl, {
